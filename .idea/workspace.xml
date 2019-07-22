@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ec7a1ab-6243-4233-89c4-2f37080622c6" name="Default Changelist" comment="project done">
-      <change afterPath="$PROJECT_DIR$/employee_records.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hujie/DailyTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hujie/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hujie/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hujie/SendMailThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hujie/TXTParseUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="6ec7a1ab-6243-4233-89c4-2f37080622c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hujie/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hujie/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hujie/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hujie/Person.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hujie/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="197">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#787#788#0" expanded="true" />
                 <element signature="e#823#824#0" expanded="true" />
@@ -335,7 +326,7 @@
       <workItem from="1563373704788" duration="6074000" />
       <workItem from="1563457169408" duration="4292000" />
       <workItem from="1563799883243" duration="6552000" />
-      <workItem from="1563809570501" duration="508000" />
+      <workItem from="1563809570501" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1563374108012</created>
@@ -344,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563374108012</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="project done">
+      <created>1563810106016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563810106016</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -359,7 +357,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17426000" />
+    <option name="totallyTimeSpent" value="17543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,8 +483,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hujie/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="197">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#787#788#0" expanded="true" />
             <element signature="e#823#824#0" expanded="true" />

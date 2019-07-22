@@ -23,7 +23,7 @@ class Person {
         this.last_name = last_name;
     }
 
-    String getFirst_name() {
+    public String getFirst_name() {
         return first_name;
     }
 
@@ -31,7 +31,7 @@ class Person {
         this.first_name = first_name;
     }
 
-    Date getDate_of_birth() {
+    public Date getDate_of_birth() {
         return date_of_birth;
     }
 
@@ -39,7 +39,7 @@ class Person {
         this.date_of_birth = date_of_birth;
     }
 
-    String getEmail() {
+    public String getEmail() {
         return email;
     }
 
