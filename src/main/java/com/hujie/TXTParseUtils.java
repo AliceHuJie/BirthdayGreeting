@@ -1,35 +1,49 @@
 package com.hujie;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
 class TXTParseUtils {
-    private static SimpleDateFormat formatter= new SimpleDateFormat("yyyy/MM/dd");
+    private static SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd");
+    private static final String fileName = "/employee_records.txt";
 
-    static ArrayList<Person> readTXT(final String filepath) throws IOException {
+    static ArrayList<Person> readTXT() {
         ArrayList<Person> personList = new ArrayList<>();
-        BufferedReader file = new BufferedReader(new FileReader(filepath));
-        String line;
-        file.readLine();
-        while ((line = file.readLine()) != null) {
-            if (!line.equals("0"))
-            {
-                if (!line.equals(""))
-                {
-                    String l = new String(line.getBytes());
-                    Person p = parseString2Person(l);
-                    if(p != null){
-                        personList.add(p);
-                    }
+        BufferedReader br = null;
+        InputStream is = null;
+        try {
+            is = TXTParseUtils.class.getResourceAsStream(fileName);
+            br = new BufferedReader(new InputStreamReader(is));
+            String line = "";
+            br.readLine();
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+                Person p = parseString2Person(line);
+                if (p != null) {
+                    personList.add(p);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (is != null) {
+                try {
+                    is.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
             }
         }
-        file.close();
         return personList;
     }
 
@@ -37,11 +51,11 @@ class TXTParseUtils {
         Person person = null;
         String[] fields = line.split(",");
 
-        if(fields.length == 4){
+        if (fields.length == 4) {
             Date date_of_birth;
             try {
                 date_of_birth = formatter.parse(fields[2]);
-                person = new Person(fields[0], fields[1],date_of_birth,fields[3]);
+                person = new Person(fields[0], fields[1], date_of_birth, fields[3]);
             } catch (ParseException e) {
                 e.printStackTrace();
             }
