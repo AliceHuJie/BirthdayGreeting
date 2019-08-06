@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'application'
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+group = 'com.hujie'
+version = '1.0-SNAPSHOT'
+
+mainClassName = 'com.hujie.BirthdayGreeting'
+description = """birthdaygreeting"""
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenLocal()
+    maven {  url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.11'
+}
